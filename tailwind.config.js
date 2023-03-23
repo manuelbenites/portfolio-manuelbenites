@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	darkMode: "class",
 	content: [
 		"./app/**/*.{js,ts,jsx,tsx}",
 		"./pages/**/*.{js,ts,jsx,tsx}",
@@ -9,6 +10,11 @@ module.exports = {
 		"./src/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
+		colors: {
+			"royal-blue": "#4e33ff",
+			snow: "#fcfcfc",
+			"dark-slate-gray": "#1F2633",
+		},
 		extend: {
 			boxShadow: {
 				project: "rgba(100,100,111,0.2) 0px 7px 29px 0px",

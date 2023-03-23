@@ -25,7 +25,7 @@ export const projects = [
 	},
 	{
 		title: "Notes App",
-		description: "Aplicación responsive para crear, editar y eliminar notas, ",
+		description: "Aplicación responsive para crear, editar y eliminar notas.",
 		tech: ["React", "Node", "MongoDB", "TailwindCSS"],
 		code: "https://github.com/manuelbenites/notesapp-mongodb-react-node",
 		link: "",
