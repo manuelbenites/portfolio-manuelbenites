@@ -1,5 +1,13 @@
 export const projects = [
 	{
+		title: "Password Generate App",
+		description:
+			"Aplicación web que genera contraseñas y evalua su nivel de seguridad, desafio de Frontend Mentor.",
+		tech: ["React", "Vite", "TailwindCSS"],
+		code: "https://github.com/manuelbenites/password-generator-app",
+		link: "https://password-generator-app-bay.vercel.app/",
+	},
+	{
 		title: "Single Page Developer Portfolio",
 		description:
 			"Portafolio responsive de una sola pagina con validación de formularios, desafio de Frontend Mentor.",
@@ -10,7 +18,7 @@ export const projects = [
 	{
 		title: "Github User Search",
 		description:
-			"Aplicación que usa la API de GitHub para obtener datos de perfil de un usuario y mostrarlos, desafio de Frontend Mentor.",
+			"Aplicación web que usa la API de GitHub para obtener datos de perfil de un usuario y mostrarlos, desafio de Frontend Mentor.",
 		tech: ["React", "Vite", "TailwindCSS"],
 		code: "https://github.com/manuelbenites/github-user-search",
 		link: "https://manuelbenites.github.io/github-user-search",
@@ -25,7 +33,8 @@ export const projects = [
 	},
 	{
 		title: "Notes App",
-		description: "Aplicación responsive para crear, editar y eliminar notas.",
+		description:
+			"Aplicación web responsive para crear, editar y eliminar notas.",
 		tech: ["React", "Node", "MongoDB", "TailwindCSS"],
 		code: "https://github.com/manuelbenites/notesapp-mongodb-react-node",
 		link: "",

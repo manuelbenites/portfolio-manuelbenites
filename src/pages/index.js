@@ -25,7 +25,8 @@ export default function Home() {
 				<p className="mx-auto text-sm leading-5 text-justify md:leading-6 mt-[38px] max-w-[600px] md:text-[16px]">
 					Apasionado por el desarrollo web con conocimientos en HTML5, CSS3 y
 					JavaScript, tecnologías como React y Sass. Neovim es el editor de
-					codigo que uso actualmente.
+					codigo que uso actualmente. En mi tiempo libre práctico calistenia y
+					escuchar musica (Rock and Pop).
 				</p>
 				<div className="flex gap-5 justify-center mt-8">
 					<Link href="https://github.com/manuelbenites" target="_blank">
