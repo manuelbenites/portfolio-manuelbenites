@@ -14,6 +14,10 @@ module.exports = {
 			"royal-blue": "#4e33ff",
 			snow: "#fcfcfc",
 			"dark-slate-gray": "#1F2633",
+			"midnight-blue": "#0b1224",
+			"aqua-marine": "#72e2ae",
+			navy: "#13182d",
+			silver: "#bfbece",
 		},
 		extend: {
 			boxShadow: {
