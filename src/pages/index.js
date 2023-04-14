@@ -29,7 +29,7 @@ export default function Home() {
 					Apasionado por el desarrollo web con conocimientos en HTML5, CSS3 y
 					JavaScript, tecnologías como React y Sass. Neovim es el editor de
 					codigo que uso actualmente. En mi tiempo libre práctico calistenia y
-					escuchar musica (Rock and Pop).
+					escuchar música (Rock and Pop).
 				</p>
 				<div className="flex gap-5 justify-center mt-8">
 					<Link href="https://github.com/manuelbenites" target="_blank">
@@ -62,7 +62,7 @@ export default function Home() {
 				<div className="text-3xl font-black text-center uppercase mb-[32px] dark:text-snow">
 					portafolio
 				</div>
-				<div className="grid gap-10 grid-cols-autofit">
+				<div className="grid grid-cols-1 gap-10 sm:px-10 md:grid-cols-2">
 					{projects.map((project, index) => (
 						<Card
 							key={index}

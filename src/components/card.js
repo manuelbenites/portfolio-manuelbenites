@@ -4,15 +4,15 @@ import LinkIcon from "./linkicon.js"
 
 export default function Card({ title, description, tech, code, link }) {
 	return (
-		<div className="flex flex-col justify-between p-8 text-center transition-all dark:shadow-none bg-snow text-dark-slate-gray shadow-project dark:bg-navy hover:translate-y-[-5px]">
-			<div>
-				<h3 className="text-2xl font-black dark:text-snow">{title}</h3>
-				<p className="mt-4 text-sm leading-5 md:leading-6 md:text-[16px] dark:text-silver">
+		<div className="flex flex-col justify-center p-8 text-center transition-all dark:shadow-none min-h-[320px] bg-snow text-dark-slate-gray shadow-project dark:bg-navy hover:translate-y-[-5px]">
+			<div className="">
+				<h3 className="mb-4 text-2xl font-black dark:text-snow">{title}</h3>
+				<p className="my-4 text-sm leading-5 md:leading-6 md:text-[16px] dark:text-silver">
 					{description}
 				</p>
 			</div>
 			<div>
-				<ul className="flex gap-4 justify-center my-5 text-xs font-semibold dark:text-snow">
+				<ul className="flex flex-wrap gap-4 justify-center my-5 text-xs font-semibold dark:text-snow">
 					{tech.map((item, index) => (
 						<li key={index}>{item}</li>
 					))}
