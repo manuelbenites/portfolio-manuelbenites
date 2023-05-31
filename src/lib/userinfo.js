@@ -1,5 +1,13 @@
 export const projects = [
 	{
+		title: "Planet Fact Site",
+		description:
+			"Sitio Web que muestra la información de cada planeta del sistema solar, con diseño responsive, desafío de Frontend Mentor.",
+		tech: ["React", "Vite", "TailwindCSS"],
+		code: "https://github.com/manuelbenites/planets-fact-site",
+		link: "https://planets-fact-site-sigma.vercel.app/",
+	},
+	{
 		title: "Rest Country Api",
 		description:
 			"Aplicación web que usa la API de RestCountries para obtener datos de paises y muestra su información, desafío de Frontend Mentor.",
@@ -30,14 +38,6 @@ export const projects = [
 		tech: ["React", "Vite", "SASS"],
 		code: "https://github.com/manuelbenites/github-user-search",
 		link: "https://manuelbenites.github.io/github-user-search",
-	},
-	{
-		title: "Job Listing",
-		description:
-			"Filtrar trabajos en base a las categorias seleccionadas, desafío de Frontend Mentor.",
-		tech: ["React", "Vite", "SASS"],
-		code: "https://github.com/manuelbenites/job-listing-with-filtering",
-		link: "https://manuelbenites.github.io/job-listing-with-filtering/",
 	},
 	{
 		title: "Notes App",
