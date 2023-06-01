@@ -15,7 +15,8 @@ module.exports = {
 		},
 		extend: {
 			boxShadow: {
-				custom: "0px 3px 24px 6px rgba(23,19,19,0.39)",
+				skill: "0 3px 6px 0 rgba(0, 0, 0, 0.20)",
+				card: "0 3px 6px 0 rgba(0, 0, 0, 0.30)",
 			},
 			gridTemplateColumns: {
 				autofit: "repeat(auto-fit,minmax(18em,1fr))",

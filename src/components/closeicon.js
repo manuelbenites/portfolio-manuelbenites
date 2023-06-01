@@ -1,16 +1,10 @@
 export default function CloseIcon(props) {
 	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			{...props}
-		>
+		<svg viewBox="0 0 24 24" width={24} height={24} {...props}>
 			<path
 				fill={props.fill}
-				d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
-			/>
+				d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+			></path>
 		</svg>
 	)
 }

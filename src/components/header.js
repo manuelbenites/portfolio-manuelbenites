@@ -19,33 +19,43 @@ export default function Header() {
 			>
 				<div className="flex justify-end mx-auto items-center h-24 w-[96%] relative z-40">
 					<button onClick={handleActiveModal}>
-						<CloseIcon className="transition-colors fill-[#8f93a2] hover:fill-[#e0def4]" />
+						<CloseIcon className="transition-colors fill-[#e0def4] hover:fill-[#f6c177]" />
 					</button>
 				</div>
 				<ul className="flex absolute bg-[#191724] top-0 flex-col gap-6 justify-center items-center w-full h-full">
 					<Link href="#habilidades" onClick={handleActiveModal}>
-						<li className="font-bold">habilidades</li>
+						<li className="font-semibold hover:text-[#f6c177] transition-colors">
+							habilidades
+						</li>
 					</Link>
 					<Link href="#portafolio" onClick={handleActiveModal}>
-						<li className="font-bold">portafolio</li>
+						<li className="font-semibold hover:text-[#f6c177] transition-colors">
+							portafolio
+						</li>
 					</Link>
 				</ul>
 			</div>
 			<Link href="/">
-				<h3 className="text-lg font-bold">manuelbenites</h3>
+				<h3 className="text-lg font-bold hover:text-[#f6c177] transition-colors">
+					manuelbenites
+				</h3>
 			</Link>
 			<nav className="flex items-center">
 				<ul className="hidden gap-8 sm:flex">
-					<Link href="#habilidades">
-						<li className="font-bold">habilidades</li>
+					<Link href="#habilidades" className="">
+						<li className="font-semibold hover:text-[#f6c177] transition-colors">
+							habilidades
+						</li>
 					</Link>
 					<Link href="#portafolio">
-						<li className="font-bold">portafolio</li>
+						<li className="font-semibold hover:text-[#f6c177] transition-colors">
+							portafolio
+						</li>
 					</Link>
 				</ul>
 				<div className="flex gap-4 items-center">
 					<button className="sm:hidden" onClick={handleActiveModal}>
-						<MenuIcon className="transition-colors fill-[#8f93a2] hover:fill-[#e0def4]" />
+						<MenuIcon className="transition-colors fill-[#e0def4] hover:fill-[#f6c177]" />
 					</button>
 				</div>
 			</nav>

@@ -30,13 +30,13 @@ export default function Home() {
 				</p>
 				<div className="flex gap-5 justify-center mt-8">
 					<Link href="https://github.com/manuelbenites" target="_blank">
-						<GithubIcon className="transition-colors fill-[#8f93a2] hover:fill-[#e0def4]" />
+						<GithubIcon className="transition-colors fill-[#e0def4] hover:fill-[#f6c177]" />
 					</Link>
 					<Link
 						href="https://www.linkedin.com/in/manuelbenites/"
 						target="_blank"
 					>
-						<LinkedinIcon className="transition-colors fill-[#8f93a2] hover:fill-[#e0def4]" />
+						<LinkedinIcon className="transition-colors fill-[#e0def4] hover:fill-[#f6c177]" />
 					</Link>
 				</div>
 			</section>
@@ -48,7 +48,7 @@ export default function Home() {
 					{skills.map((skill, index) => (
 						<li
 							key={index}
-							className="inline-block py-3 px-7 m-2 transition-transform shadow-custom hover:translate-y-[-5px]"
+							className="inline-block border font-normal border-[#8f93a2] border-opacity-[0.03] py-3 px-7 m-4 transition-transform shadow-skill hover:translate-y-[-5px]"
 						>
 							{skill}
 						</li>
@@ -56,10 +56,10 @@ export default function Home() {
 				</ul>
 			</section>
 			<section className="mt-10 text-[#e0def4]" id="portafolio">
-				<div className="pt-10 text-3xl font-bold text-center uppercase mb-[32px]">
+				<h2 className="pt-10 text-3xl font-bold text-center uppercase mb-[32px]">
 					portafolio
-				</div>
-				<div className="grid grid-cols-1 gap-10 sm:px-10 md:grid-cols-2 bg-[#191724]">
+				</h2>
+				<ul className="grid grid-cols-1 gap-10 sm:px-10 md:grid-cols-2 bg-[#191724]">
 					{projects.map((project, index) => (
 						<Card
 							key={index}
@@ -68,9 +68,10 @@ export default function Home() {
 							tech={project.tech}
 							code={project.code}
 							link={project.link}
+							img={project.img}
 						/>
 					))}
-				</div>
+				</ul>
 			</section>
 		</>
 	)
