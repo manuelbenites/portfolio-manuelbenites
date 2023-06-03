@@ -16,7 +16,7 @@ export default function Header() {
 		<header className="w-full h-24 flex items-center fixed z-40 backdrop-blur-lg top-0 text-[#e0def4]">
 			<div className="mx-auto w-[90%] max-w-[1000px] flex justify-between items-center">
 				<div
-					className={`fixed  ${modal} transition-transform top-0 left-0 w-full h-screen`}
+					className={`fixed  ${modal} duration-300 top-0 left-0 w-full h-screen`}
 				>
 					<div className="flex justify-end mx-auto items-center h-24 w-[90%] relative z-40">
 						<button onClick={handleActiveModal}>
