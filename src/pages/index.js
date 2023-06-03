@@ -4,7 +4,6 @@ import GithubIcon from "../components/githubicon.js"
 import LinkedinIcon from "../components/linkedinicon.js"
 import Card from "../components/card.js"
 import { skills, projects } from "../lib/userinfo.js"
-
 export default function Home() {
 	return (
 		<>
@@ -22,42 +21,65 @@ export default function Home() {
 				<h2 className="font-bold sm:text-center mt-[38px] text-[30px] -tracking-wider leading-[1.2]">
 					Programador Front End.
 				</h2>
-				<p className="mx-auto text-sm leading-5 md:leading-6 mt-[38px] max-w-[600px] md:text-[16px]">
-					Apasionado por el desarrollo web con conocimientos en HTML5, CSS3 y
-					JavaScript, tecnologías como React y Sass. Neovim es el editor de
-					código que uso actualmente. En mi tiempo libre práctico calistenia y
-					escuchar música (Rock and Pop).
+				<p className="mx-auto mt-8 leading-5 sm:text-center text-start text-md max-w-[600px] font-azeret">
+					Autodidacta y apasionado por el desarrollo web, actualmente
+					resolviendo desafios de{" "}
+					<a
+						href="https://www.frontendmentor.io/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span className="font-bold hover:text-[#f6c177]">
+							Frontend Mentor
+						</span>
+					</a>{" "}
+					para mejorar y mostrar mis habilidades.
 				</p>
-				<div className="flex gap-5 justify-center mt-8">
+				<p className="mx-auto mt-5 leading-5 sm:text-center text-start text-md max-w-[600px] font-azeret">
+					Tengo un gusto particular por las papas fritas y el café. También
+					otros de mis pasatiempos son caminar, escuchar música sobre todo
+					Rock&Pop, jugar videojuegos de estrategia y practicar calistenia.
+				</p>
+				<ul className="flex gap-8 justify-start mt-8 font-bold sm:justify-center font-azeret">
 					<Link href="https://github.com/manuelbenites" target="_blank">
-						<GithubIcon className="transition-colors fill-[#e0def4] hover:fill-[#f6c177]" />
+						<li className="flex gap-2 hover:text-[#f6c177] transition-colors fill-[#e0def4] hover:fill-[#f6c177]">
+							<GithubIcon className="" />
+							<span>GitHub</span>
+						</li>
 					</Link>
 					<Link
 						href="https://www.linkedin.com/in/manuelbenites/"
 						target="_blank"
 					>
-						<LinkedinIcon className="transition-colors fill-[#e0def4] hover:fill-[#f6c177]" />
+						<li className="flex gap-2 hover:text-[#f6c177] transition-colors fill-[#e0def4] hover:fill-[#f6c177]">
+							<LinkedinIcon className="" />
+							<span>Linkedin</span>
+						</li>
 					</Link>
-				</div>
+				</ul>
 			</section>
 			<section className="mt-10 text-[#e0def4]" id="habilidades">
-				<h2 className="pt-10 mb-8 text-3xl font-bold text-center uppercase dark:text-snow">
+				<h2 className="pt-10 mb-8 text-4xl font-bold text-center uppercase dark:text-snow">
 					habilidades
 				</h2>
-				<ul className="flex flex-wrap justify-center mx-auto max-w-md text-[14px]">
+				<p className="mx-auto mb-6 leading-5 sm:text-center text-start text-md mt-[38px] max-w-[600px] font-azeret">
+					Aquí están todas las tecnologías y herramientas utilizadas en mis
+					proyectos.
+				</p>
+				<ul className="flex flex-wrap justify-center mx-auto max-w-lg text-[14px]">
 					{skills.map((skill, index) => (
 						<li
 							key={index}
-							className="inline-block border font-normal border-[#8f93a2] border-opacity-[0.03] py-3 px-7 m-4 transition-transform shadow-skill hover:translate-y-[-5px]"
+							className="inline-block border font-bold border-[#8f93a2] border-opacity-[0.03] py-2 px-4 m-3 transition-transform shadow-skill hover:translate-y-[-5px]"
 						>
 							{skill}
 						</li>
 					))}
 				</ul>
 			</section>
-			<section className="mt-10 text-[#e0def4]" id="portafolio">
-				<h2 className="pt-10 text-3xl font-bold text-center uppercase mb-[32px]">
-					portafolio
+			<section className="mt-10 text-[#e0def4]" id="proyectos">
+				<h2 className="pt-10 text-4xl font-bold text-center uppercase mb-[32px]">
+					proyectos
 				</h2>
 				<ul className="grid grid-cols-1 gap-10 sm:px-10 md:grid-cols-2 bg-[#191724]">
 					{projects.map((project, index) => (

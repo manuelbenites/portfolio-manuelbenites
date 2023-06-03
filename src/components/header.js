@@ -28,9 +28,9 @@ export default function Header() {
 							habilidades
 						</li>
 					</Link>
-					<Link href="#portafolio" onClick={handleActiveModal}>
+					<Link href="#proyectos" onClick={handleActiveModal}>
 						<li className="font-semibold hover:text-[#f6c177] transition-colors">
-							portafolio
+							proyectos
 						</li>
 					</Link>
 				</ul>
@@ -47,9 +47,9 @@ export default function Header() {
 							habilidades
 						</li>
 					</Link>
-					<Link href="#portafolio">
+					<Link href="#proyectos">
 						<li className="font-semibold hover:text-[#f6c177] transition-colors">
-							portafolio
+							proyectos
 						</li>
 					</Link>
 				</ul>
