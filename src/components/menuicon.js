@@ -1,10 +1,15 @@
 export default function MenuIcon(props) {
 	return (
-		<svg viewBox="0 0 24 24" width={24} height={24} {...props}>
-			<path
-				fill={props.fill}
-				d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-			></path>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="28"
+			height="20"
+			viewBox="0 0 28 20"
+			{...props}
+		>
+			<rect y="9" width="28" height="2" fill={props.fill} />
+			<rect width="20" height="2" fill={props.fill} />
+			<rect x="8" y="18" width="20" height="2" fill={props.fill} />
 		</svg>
 	)
 }
