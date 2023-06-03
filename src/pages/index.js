@@ -23,7 +23,7 @@ export default function Home() {
 				</h2>
 				<p className="mx-auto mt-8 leading-5 sm:text-center text-start text-md max-w-[600px] font-azeret">
 					Autodidacta y apasionado por el desarrollo web, actualmente
-					resolviendo desafios de{" "}
+					resolviendo desafíos de{" "}
 					<a
 						href="https://www.frontendmentor.io/"
 						target="_blank"
