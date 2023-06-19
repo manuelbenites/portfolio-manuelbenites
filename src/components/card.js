@@ -10,21 +10,29 @@ export default function Card({ title, description, tech, code, link }) {
 				<p className="my-4 leading-6 text-md">{description}</p>
 			</div>
 			<div>
-				<ul className="flex flex-wrap gap-4 justify-center my-5 text-xs font-medium font-azeret">
+				<ul className="flex flex-wrap gap-4 justify-center my-5 text-xs font-medium">
 					{tech.map((item, index) => (
 						<li key={index}>{item}</li>
 					))}
 				</ul>
 				<ul className="flex flex-row justify-center pt-4">
 					{code && (
-						<Link href={code} target="_blank">
+						<Link
+							href={code}
+							target="_blank"
+							aria-label="Redirect to Github Profile"
+						>
 							<li>
 								<GithubIcon className="inline-block mx-3 transition-colors fill-[#e0def4] hover:fill-[#f6c177]" />
 							</li>
 						</Link>
 					)}
 					{link && (
-						<Link href={link} target="_blank">
+						<Link
+							href={link}
+							target="_blank"
+							aria-label="Redirect to Linkedin Profile"
+						>
 							<li>
 								<LinkIcon className="inline-block mx-3 transition-colors fill-[#e0def4] hover:fill-[#f6c177]" />
 							</li>

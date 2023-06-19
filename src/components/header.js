@@ -24,12 +24,20 @@ export default function Header() {
 						</button>
 					</div>
 					<ul className="flex absolute bg-[#191724] text-2xl capitalize top-0 flex-col gap-6 justify-center items-center w-full h-full">
-						<Link href="#habilidades" onClick={handleActiveModal}>
+						<Link
+							href="#habilidades"
+							onClick={handleActiveModal}
+							aria-label="Read more about skills"
+						>
 							<li className="font-normal hover:text-[#f6c177] px-16 py-6 transition-colors">
 								habilidades
 							</li>
 						</Link>
-						<Link href="#proyectos" onClick={handleActiveModal}>
+						<Link
+							href="#proyectos"
+							onClick={handleActiveModal}
+							aria-label="Read more about projects"
+						>
 							<li className="font-normal hover:text-[#f6c177] px-16 py-6 transition-colors">
 								proyectos
 							</li>
@@ -43,12 +51,12 @@ export default function Header() {
 				</Link>
 				<nav className="flex items-center">
 					<ul className="hidden gap-8 font-normal tracking-wider capitalize sm:flex">
-						<Link href="#habilidades" className="">
+						<Link href="#habilidades" aria-label="Read more about skills">
 							<li className="hover:text-[#f6c177] transition-colors">
 								habilidades
 							</li>
 						</Link>
-						<Link href="#proyectos">
+						<Link href="#proyectos" aria-label="Read more about projects">
 							<li className="hover:text-[#f6c177] tracking-wider transition-colors">
 								proyectos
 							</li>

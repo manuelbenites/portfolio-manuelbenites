@@ -10,6 +10,8 @@ export default function Layout({ children }) {
 				<meta name="author" content="Manuel Benites" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
+				<link rel="preload" as="font" />
+				<link rel="preconnect" />
 				<title>Portafolio | Manuel Benites</title>
 			</Head>
 			<Header />

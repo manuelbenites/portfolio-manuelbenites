@@ -1,5 +1,13 @@
 export const projects = [
 	{
+		title: "Entertainment Web App",
+		description:
+			"Aplicación Web de entretenimiento con múltiples páginas, enrutamiento y funcionalidad de búsqueda, desafío de Frontend Mentor.",
+		tech: ["React", "Vite", "TailwindCSS", "React Router"],
+		code: "https://github.com/manuelbenites/entertainment-web-app",
+		link: "https://entertainment-web-9avglexjd-manuelbs95.vercel.app/",
+	},
+	{
 		title: "Planet Fact Site",
 		description:
 			"Sitio Web que muestra la información de cada planeta del sistema solar, con diseño responsive, desafío de Frontend Mentor.",
@@ -38,14 +46,6 @@ export const projects = [
 		tech: ["React", "Vite", "SASS"],
 		code: "https://github.com/manuelbenites/github-user-search",
 		link: "https://manuelbenites.github.io/github-user-search",
-	},
-	{
-		title: "Notes App",
-		description:
-			"Aplicación web responsive para crear, editar y eliminar notas.",
-		tech: ["React", "Node", "MongoDB", "TailwindCSS", "Redux"],
-		code: "https://github.com/manuelbenites/notesapp-mongodb-react-node",
-		link: "",
 	},
 ]
 
