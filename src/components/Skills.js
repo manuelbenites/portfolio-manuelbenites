@@ -8,7 +8,7 @@ export default function Skills() {
 				{mySkills.map((skill, index) => (
 					<li key={index} className="flex flex-col items-center justify-center">
 						<div className="h-10 w-10 mb-3">
-							<img src={skill.path} />
+							<img src={skill.path} alt={skill.title} />
 						</div>
 						<p className="font-medium text-sm">{skill.title}</p>
 					</li>
