@@ -1,22 +1,16 @@
-import { skills } from "@/lib/userinfo"
+import { mySkills } from "@/lib/userinfo"
 
 export default function Skills() {
 	return (
 		<section className="mt-10 scroll-my-[80px] text-[#e0def4]" id="habilidades">
-			<h2 className="pt-10 mb-8 text-4xl font-bold text-center capitalize">
-				habilidades
-			</h2>
-			<p className="mx-auto mb-6 leading-6 text-start text-md mt-[38px] max-w-[650px]">
-				Aquí están todas las tecnologías y herramientas utilizadas en mis
-				proyectos.
-			</p>
-			<ul className="flex flex-wrap justify-center mx-auto max-w-lg text-[14px]">
-				{skills.map((skill, index) => (
-					<li
-						key={index}
-						className="inline-block border font-bold border-[#8f93a2] border-opacity-[0.03] py-2 px-4 m-3 transition-transform shadow-skill hover:translate-y-[-5px]"
-					>
-						{skill}
+			<h2 className="pt-10 mb-8 text-3xl font-bold capitalize">habilidades</h2>
+			<ul className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center">
+				{mySkills.map((skill, index) => (
+					<li key={index} className="flex flex-col items-center justify-center">
+						<div className="h-10 w-10 mb-3">
+							<img src={skill.path} />
+						</div>
+						<p className="font-medium text-sm">{skill.title}</p>
 					</li>
 				))}
 			</ul>

@@ -12,7 +12,7 @@ export default function Resume() {
 			<h2 className="font-bold sm:text-center mt-[38px] text-[30px] -tracking-wider leading-[1.2]">
 				Programador Front End.
 			</h2>
-			<p className="mx-auto mt-8 leading-6 text-start text-md max-w-[650px]">
+			<p className="mx-auto mt-8 leading-6 text-justify text-md">
 				Autodidacta y apasionado por el desarrollo web, actualmente resolviendo
 				desafíos de{" "}
 				<a
@@ -24,12 +24,10 @@ export default function Resume() {
 						Frontend Mentor
 					</span>
 				</a>{" "}
-				para mejorar y mostrar mis habilidades.
-			</p>
-			<p className="mx-auto mt-1 leading-6 text-start text-md max-w-[650px]">
-				Tengo un gusto particular por las papas fritas y el café. También otros
-				de mis pasatiempos son caminar, escuchar música sobre todo Rock&Pop,
-				jugar videojuegos de estrategia y practicar calistenia.
+				para mejorar y mostrar mis habilidades. Tengo un gusto particular por
+				las papas fritas y el café. También otros de mis pasatiempos son
+				caminar, escuchar música sobre todo Rock&Pop, jugar videojuegos de
+				estrategia y practicar calistenia.
 			</p>
 			<ul className="flex gap-8 justify-start mt-8 font-semibold sm:justify-center">
 				<Link href="https://github.com/manuelbenites" target="_blank">
